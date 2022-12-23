@@ -35,19 +35,18 @@ $(document).ready(function () {
       success: function(data) {
       for (let i = 0; i < data.length; i++) {
         $('section.places').append(`
-          <article>
-	  <div class="title_box">
-	    <h2>${data[i].name}</h2>
-	    <div class="price_by_night">$${data[i].price_by_night}</div>
-	  </div>
-	  <div class="information">
-	    <div class="max_guest">${data[i].max_guest}</div>
-            <div class="number_rooms">${data[i].number_rooms}</div>
-            <div class="number_bathrooms">${data[i].number_bathrooms}</div>
-	  </div>
-	  <div class="user">
-
-	</article>
+        <article>
+        <div class="title_box">
+          <h2>${data[i].name}</h2>
+          <div class="price_by_night">$${data[i].price_by_night}</div>
+        </div>
+        <div class="information">
+          <div class="max_guest">${data[i].max_guest}</div>
+                <div class="number_rooms">${data[i].number_rooms}</div>
+                <div class="number_bathrooms">${data[i].number_bathrooms}</div>
+        </div>
+        <div class="user">
+      </article>
         `)};
       }
       });
